@@ -6734,9 +6734,9 @@ GameObject:
   - component: {fileID: 7053578237819220950}
   - component: {fileID: 3415002495467871218}
   - component: {fileID: 7053159491600947580}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6772,7 +6772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7b20ec5f9d99241865451b604b6bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 2.5
   animator: {fileID: 3537281359822845961}
   rigidbody: {fileID: 7053578237819220950}
 --- !u!95 &3537281359822845961

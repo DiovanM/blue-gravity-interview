@@ -12,16 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f181481682334f408c66e84f01f7030, type: 3}
   m_Name: Hat1
   m_EditorClassIdentifier: 
-  name: 
-  icon: {fileID: 0}
-  defaultPrice: 0
-  defaultSellPrice: 0
-  <Type>k__BackingField: 0
-  bottomIdle: {fileID: 0}
-  topIdle: {fileID: 0}
-  rightIdle: {fileID: 0}
-  leftIdle: {fileID: 0}
-  bottomWalking: []
-  topWalking: []
-  rightWalking: []
-  leftWalking: []
+  name: Big Hat
+  icon: {fileID: 1771793573, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  defaultPrice: 50
+  defaultSellPrice: 10
+  <Type>k__BackingField: 1
+  bottomIdle: {fileID: -1156699301, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  topIdle: {fileID: 1412041016, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  rightIdle: {fileID: -1226784653, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  leftIdle: {fileID: -1937929572, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  bottomWalking:
+  - {fileID: 1981719223, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: 959319877, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -1548948273, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: 1117620288, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -1081997300, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -1846375120, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  topWalking:
+  - {fileID: -1988845488, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -1970442706, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: 1241551152, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -1471688328, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -958033699, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: 2058655001, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  rightWalking:
+  - {fileID: -378044516, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: 419636285, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -81372584, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -758525418, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -1341716103, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: 204036745, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  leftWalking:
+  - {fileID: 2045026818, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -2054776790, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: 526988589, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -875267545, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: 1771793573, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  - {fileID: -1891911202, guid: 12db48062db228547bd61d77aa67739c, type: 3}
