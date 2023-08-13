@@ -6733,6 +6733,7 @@ GameObject:
   - component: {fileID: 3537281359822845961}
   - component: {fileID: 7053578237819220950}
   - component: {fileID: 3415002495467871218}
+  - component: {fileID: 7053159491600947580}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -6831,6 +6832,82 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.23}
   serializedVersion: 2
   m_Radius: 0.39155406
+--- !u!114 &7053159491600947580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7754078906490091655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e842f5a7ec52c4182a12692afe54f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomIdleOutfit: {fileID: 7754078906831813806}
+  bottomIdleHat: {fileID: 7754078907408730285}
+  topIdleOutfit: {fileID: 7754078905542446373}
+  topIdleHat: {fileID: 7754078906351173049}
+  rightIdleOutfit: {fileID: 7754078906198553745}
+  rightIdleHat: {fileID: 7754078906332748578}
+  leftIdleOutfit: {fileID: 7754078906615547867}
+  leftIdleHat: {fileID: 7754078906182907411}
+  bottomWalkingOutfit:
+  - {fileID: 7754078907431094966}
+  - {fileID: 7754078906490267481}
+  - {fileID: 7754078905577912820}
+  - {fileID: 7754078907193866045}
+  - {fileID: 7754078907027167058}
+  - {fileID: 7754078907083377811}
+  bottomWalkingHat:
+  - {fileID: 7754078905628732427}
+  - {fileID: 7754078905775883204}
+  - {fileID: 7754078905519490093}
+  - {fileID: 7754078907584086645}
+  - {fileID: 7754078905819413323}
+  - {fileID: 7754078905792085936}
+  topWalkingOutfit:
+  - {fileID: 7754078906761121491}
+  - {fileID: 7754078906040493966}
+  - {fileID: 7754078906749830970}
+  - {fileID: 7754078905793322483}
+  - {fileID: 7754078906128162790}
+  - {fileID: 7754078906016038742}
+  topWalkingHat:
+  - {fileID: 7754078905996157914}
+  - {fileID: 7754078907024263242}
+  - {fileID: 7754078905511068013}
+  - {fileID: 7754078906546649148}
+  - {fileID: 7754078906840466291}
+  - {fileID: 7754078907007428462}
+  rightWalkingOutfit:
+  - {fileID: 7754078907517312475}
+  - {fileID: 7754078907170624516}
+  - {fileID: 7754078905843439335}
+  - {fileID: 7754078907181922610}
+  - {fileID: 7754078905460665037}
+  - {fileID: 7754078906717695191}
+  rightWalkingHat:
+  - {fileID: 7754078906756934703}
+  - {fileID: 7754078906864364742}
+  - {fileID: 7754078907307152337}
+  - {fileID: 7754078906410553870}
+  - {fileID: 7754078907566572088}
+  - {fileID: 7754078907547948370}
+  leftWalkingOutfit:
+  - {fileID: 7754078905551388050}
+  - {fileID: 7754078906199183093}
+  - {fileID: 7754078906777040621}
+  - {fileID: 7754078906521322539}
+  - {fileID: 7754078906226188637}
+  - {fileID: 7754078906014942186}
+  leftWalkingHat:
+  - {fileID: 7754078907497142326}
+  - {fileID: 7754078906488020592}
+  - {fileID: 7754078906483417555}
+  - {fileID: 7754078907237871992}
+  - {fileID: 7754078906810118810}
+  - {fileID: 7754078906414631713}
 --- !u!1 &7754078906490267487
 GameObject:
   m_ObjectHideFlags: 0
