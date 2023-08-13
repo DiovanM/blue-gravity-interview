@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,8 @@ public class ShopView : Popup
     [SerializeField] private Button purchaseButton;
     [SerializeField] private Button closeButton;
 
-    private List<ShopItemView> selectedItems;
+    private Action<List<Item>> onFinishPurchase;
+    private List<Item> selectedItems;
     private int purchaseValue;
     private int playerBalance;
 
@@ -27,10 +29,13 @@ public class ShopView : Popup
         purchaseButton.onClick.AddListener(FinishPurchase);
     }
 
-    public void Setup(List<Item> items, string title)
+    public void Setup(List<Item> items, string title, Action<List<Item>> onFinishPurchase)
     {
 
-        selectedItems = new List<ShopItemView>();
+        selectedItems = new List<Item>();
+        purchaseValue = 0;
+
+        this.onFinishPurchase = onFinishPurchase;
 
         playerBalance = CurrencyManager.Currency;
         titleText.text = title;
@@ -74,7 +79,7 @@ public class ShopView : Popup
 
     private void OnSelectItem(ShopItemView itemView)
     {
-        selectedItems.Add(itemView);
+        selectedItems.Add(itemView.referencedItem);
         purchaseValue += itemView.referencedItem.defaultPrice;
 
         UpdatePurchase();
@@ -82,7 +87,7 @@ public class ShopView : Popup
 
     private void OnDeselectItem(ShopItemView itemView)
     {
-        selectedItems.Remove(itemView);
+        selectedItems.Remove(itemView.referencedItem);
         purchaseValue -= itemView.referencedItem.defaultPrice;
 
         UpdatePurchase();
@@ -108,9 +113,9 @@ public class ShopView : Popup
 
     private void FinishPurchase()
     {
+        onFinishPurchase?.Invoke(selectedItems);
 
         CanvasManager.instance.ClosePopup(this);
-
     }
 
 }

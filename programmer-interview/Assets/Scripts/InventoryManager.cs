@@ -9,7 +9,7 @@ public class InventoryManager
     public static Action<Item> onItemAdded;
     public static Action<Item> onItemRemoved;
 
-    public static List<Item> PlayerItems { get; private set; }
+    public static List<Item> PlayerItems { get; private set; } = new List<Item>();
 
     public static void AddItem(Item item)
     {

@@ -12,8 +12,28 @@ public class Shop : MonoBehaviour
     {
         proximityDetector.onEnter += (gameObject) =>
         {
-            CanvasManager.instance.OpenShop(initialItems, "Shop");
+            CanvasManager.instance.OpenShop(initialItems, "Shop", ProcessPurchase);
         };
     }
+
+    private void ProcessPurchase(List<Item> purchasedItems)
+    {
+        var totalValue = 0;
+
+        for (int i = 0; i < purchasedItems.Count; i++)
+        {
+            var item = purchasedItems[i];
+
+            totalValue += item.defaultPrice;
+
+            initialItems.Remove(item);
+
+            InventoryManager.AddItem(item);
+        }
+
+        CurrencyManager.RemoveCurrency(totalValue);
+    }
+
+
 
 }

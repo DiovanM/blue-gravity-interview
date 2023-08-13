@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,11 +15,11 @@ public class CanvasManager : Singleton<CanvasManager>
         shopView.gameObject.SetActive(false);
     }
 
-    public void OpenShop(List<Item> items, string title)
+    public void OpenShop(List<Item> items, string title, Action<List<Item>> onFinishPurchase)
     {
         screenlocker.SetActive(true);
 
-        shopView.Setup(items, title);
+        shopView.Setup(items, title, onFinishPurchase);
         shopView.Open();
     }
 
