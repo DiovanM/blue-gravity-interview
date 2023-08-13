@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f181481682334f408c66e84f01f7030, type: 3}
+  m_Name: Hat2
+  m_EditorClassIdentifier: 
+  name: Hood
+  icon: {fileID: 1771793573, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  defaultPrice: 50
+  defaultSellPrice: 25
+  <Type>k__BackingField: 1
+  bottomIdle: {fileID: -1900287566, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  topIdle: {fileID: -643358024, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  rightIdle: {fileID: -776722295, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  leftIdle: {fileID: 45818815, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  bottomWalking:
+  - {fileID: 1083653059, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -2093256633, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -1907094905, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 871359266, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 340456493, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -1206217333, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  topWalking:
+  - {fileID: 2138556697, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 792252652, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 419515406, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 247825435, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 1739315462, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -1862937214, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  rightWalking:
+  - {fileID: 1814539146, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -1389936851, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 80452033, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 1339300410, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -811769401, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 661351945, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  leftWalking:
+  - {fileID: 1819614886, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -1459429544, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 1765302923, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: 2016242043, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -1834751500, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}
+  - {fileID: -1151889781, guid: d394a9497c3712f45bff37c8bb295c62, type: 3}

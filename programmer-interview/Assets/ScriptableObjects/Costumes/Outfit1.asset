@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f181481682334f408c66e84f01f7030, type: 3}
+  m_Name: Outfit1
+  m_EditorClassIdentifier: 
+  name: Suit 1
+  icon: {fileID: 1771793573, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  defaultPrice: 70
+  defaultSellPrice: 30
+  <Type>k__BackingField: 0
+  bottomIdle: {fileID: 679349439, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  topIdle: {fileID: 622773589, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  rightIdle: {fileID: -29299019, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  leftIdle: {fileID: 1073821848, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  bottomWalking:
+  - {fileID: -525673737, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -2071379745, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -984865275, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 2097063285, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -1824656198, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 1790430667, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  topWalking:
+  - {fileID: 665189456, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -2136563315, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 827098708, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -308344423, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 1220605505, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 321790583, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  rightWalking:
+  - {fileID: 224339635, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -1697681362, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -1673032025, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -1071788521, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -1059902574, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 56047837, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  leftWalking:
+  - {fileID: -49966297, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -1959966506, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 489205519, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: -545868197, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 1908981049, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}
+  - {fileID: 1321947624, guid: 0426fe2164405144c80bc3596fcdbd3e, type: 3}

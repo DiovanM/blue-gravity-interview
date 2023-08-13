@@ -68,7 +68,18 @@ public class CharacterCostume : MonoBehaviour
                 }
             case CostumeType.Outfit:
                 {
+                    bottomIdleOutfit.sprite = costume.bottomIdle;
+                    topIdleOutfit.sprite = costume.topIdle;
+                    leftIdleOutfit.sprite = costume.leftIdle;
+                    rightIdleOutfit.sprite = costume.rightIdle;
 
+                    for (int i = 0; i < 6; i++)
+                    {
+                        bottomWalkingOutfit[i].sprite = costume.bottomWalking[i];
+                        topWalkingOutfit[i].sprite = costume.topWalking[i];
+                        leftWalkingOutfit[i].sprite = costume.leftWalking[i];
+                        rightWalkingOutfit[i].sprite = costume.rightWalking[i];
+                    }
                     break;
                 }
         }
@@ -97,6 +108,18 @@ public class CharacterCostume : MonoBehaviour
                 }
             case CostumeType.Outfit:
                 {
+                    bottomIdleOutfit.sprite = null;
+                    topIdleOutfit.sprite = null;
+                    leftIdleOutfit.sprite = null;
+                    rightIdleOutfit.sprite = null;
+
+                    for (int i = 0; i < 6; i++)
+                    {
+                        bottomWalkingOutfit[i].sprite = null;
+                        topWalkingOutfit[i].sprite = null;
+                        leftWalkingOutfit[i].sprite = null;
+                        rightWalkingOutfit[i].sprite = null;
+                    }
 
                     break;
                 }

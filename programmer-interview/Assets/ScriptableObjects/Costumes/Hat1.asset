@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Big Hat
   icon: {fileID: 1771793573, guid: 12db48062db228547bd61d77aa67739c, type: 3}
   defaultPrice: 50
-  defaultSellPrice: 10
+  defaultSellPrice: 25
   <Type>k__BackingField: 1
   bottomIdle: {fileID: -1156699301, guid: 12db48062db228547bd61d77aa67739c, type: 3}
   topIdle: {fileID: 1412041016, guid: 12db48062db228547bd61d77aa67739c, type: 3}

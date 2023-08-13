@@ -185,6 +185,9 @@ MonoBehaviour:
   proximityDetector: {fileID: 1310007101742379504}
   initialItems:
   - {fileID: 11400000, guid: 2cb894980d12dc246bf46f269205eea5, type: 2}
+  - {fileID: 11400000, guid: e76fbf556dbd9fa429cce65296ce2d73, type: 2}
+  - {fileID: 11400000, guid: 19196b22434ae1142ae4336c3af51b6b, type: 2}
+  - {fileID: 11400000, guid: c772164a338185943a90ec4557c0837b, type: 2}
   canvas: {fileID: 4413245920484102969}
   buyButton: {fileID: 3574865649082778622}
   sellButton: {fileID: 2619691998644757458}
