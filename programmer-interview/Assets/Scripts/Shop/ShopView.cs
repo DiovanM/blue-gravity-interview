@@ -16,7 +16,7 @@ public class ShopView : Popup
 
     private List<ShopItemView> selectedItems;
     private int purchaseValue;
-    private int playerBalance = 100;
+    private int playerBalance;
 
     private void Awake()
     {
@@ -32,6 +32,7 @@ public class ShopView : Popup
 
         selectedItems = new List<ShopItemView>();
 
+        playerBalance = CurrencyManager.Currency;
         titleText.text = title;
 
         for (int i = 0; i < shopItemViews.Count; i++)
