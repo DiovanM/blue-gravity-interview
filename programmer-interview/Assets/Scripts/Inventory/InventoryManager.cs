@@ -23,6 +23,11 @@ public class InventoryManager
         {
             PlayerItems.Remove(item);
             onItemRemoved?.Invoke(item);
+
+            if(item is Costume costume)
+            {
+                CharacterCostumeManager.RemoveCostume(costume);
+            }
         }
         else
         {

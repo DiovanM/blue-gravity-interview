@@ -18,10 +18,10 @@ public class ShopItemView : MonoBehaviour
 
     public bool selected;
 
-    public void Setup(Item item)
+    public void Setup(Item item, bool selling = false)
     {
         icon.sprite = item.icon;
-        priceText.text = item.defaultPrice.ToString();
+        priceText.text = selling ? item.defaultSellPrice.ToString() : item.defaultPrice.ToString();
 
         pointerHandler.onPointerUp += (e) => onClick?.Invoke(this);
 
@@ -41,7 +41,10 @@ public class ShopItemView : MonoBehaviour
         icon.sprite = null;
         priceText.text = "0";
         pointerHandler.onPointerUp = null;
+        onClick = null;
         referencedItem = null;
+
+        Deselect();
     }
 
     public void Deselect()

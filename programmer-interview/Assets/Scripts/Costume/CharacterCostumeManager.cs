@@ -29,4 +29,16 @@ public class CharacterCostumeManager
         }
     }
 
+    public static void RemoveCostume(Costume costume)
+    {
+        if (currentCostumes.TryGetValue(costume.Type, out var equippedCostume))
+        {
+            if (equippedCostume == costume)
+            {
+                currentCostumes.Remove(costume.Type);
+                onRemoveCostume?.Invoke(costume.Type);
+            }
+        }
+    }
+
 }

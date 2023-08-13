@@ -41,7 +41,7 @@ public class Shop : MonoBehaviour
 
     private void OpenSellShop()
     {
-        //CanvasManager.instance.OpenShop(initialItems, "Sell", ProcessPurchase);
+        CanvasManager.instance.OpenSellShop(InventoryManager.PlayerItems, "Sell", ProcessSell, () => ShowCanvas(null));
     }
 
     private void ProcessPurchase(List<Item> purchasedItems)
@@ -64,6 +64,25 @@ public class Shop : MonoBehaviour
         ShowCanvas(null);
     }
 
+    private void ProcessSell(List<Item> soldItems)
+    {
+        var totalValue = 0;
+
+        for (int i = 0; i < soldItems.Count; i++)
+        {
+            var item = soldItems[i];
+
+            totalValue += item.defaultSellPrice;
+
+            initialItems.Add(item);
+
+            InventoryManager.RemoveItem(item);
+        }
+
+        CurrencyManager.AddCurrency(totalValue);
+
+        ShowCanvas(null);
+    }
 
 
 }
