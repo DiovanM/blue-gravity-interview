@@ -33,6 +33,17 @@ public class CharacterCostume : MonoBehaviour
     [SerializeField] private List<SpriteRenderer> leftWalkingOutfit;
     [SerializeField] private List<SpriteRenderer> leftWalkingHat;
 
+    private void Awake()
+    {
+        CharacterCostumeManager.onEquipCostume += ApplyCostume;
+        CharacterCostumeManager.onRemoveCostume += RemoveCostume;
+    }
+
+    private void OnDestroy()
+    {
+        CharacterCostumeManager.onEquipCostume -= ApplyCostume;
+        CharacterCostumeManager.onRemoveCostume -= RemoveCostume;
+    }
 
     public void ApplyCostume(Costume costume)
     {
@@ -65,7 +76,31 @@ public class CharacterCostume : MonoBehaviour
 
     public void RemoveCostume(CostumeType type)
     {
+        switch (type)
+        {
+            case CostumeType.Hat:
+                {
+                    bottomIdleHat.sprite = null;
+                    topIdleHat.sprite = null;
+                    leftIdleHat.sprite = null;
+                    rightIdleHat.sprite = null;
 
+                    for (int i = 0; i < 6; i++)
+                    {
+                        bottomWalkingHat[i].sprite = null;
+                        topWalkingHat[i].sprite = null;
+                        leftWalkingHat[i].sprite = null;
+                        rightWalkingHat[i].sprite = null;
+                    }
+
+                    break;
+                }
+            case CostumeType.Outfit:
+                {
+
+                    break;
+                }
+        }
     }
 
 }
