@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class CanvasManager : Singleton<CanvasManager>
 {
+
+    public static Action onOpenPopup;
+    public static Action onClosePopup;
+
     [SerializeField] private GameObject screenlocker;
 
     [SerializeField] private ShopView shopView;
@@ -25,6 +29,7 @@ public class CanvasManager : Singleton<CanvasManager>
 
         shopView.Setup(items, title, onFinishPurchase, onClose);
         shopView.Open();
+        onOpenPopup?.Invoke();
     }
 
     public void OpenSellShop(List<Item> items, string title, Action<List<Item>> onFinishSell, Action onClose)
@@ -33,6 +38,7 @@ public class CanvasManager : Singleton<CanvasManager>
 
         shopSellView.Setup(items, title, onFinishSell, onClose);
         shopSellView.Open();
+        onOpenPopup?.Invoke();
     }
 
     public void OpenCostumeView(List<Item> items)
@@ -41,6 +47,7 @@ public class CanvasManager : Singleton<CanvasManager>
 
         costumeView.Setup(items);
         costumeView.Open();
+        onOpenPopup?.Invoke();
     }
 
     public void ClosePopup(Popup popup)
@@ -49,6 +56,7 @@ public class CanvasManager : Singleton<CanvasManager>
         {
             popup.gameObject.SetActive(false);
             screenlocker.SetActive(false);
+            onClosePopup?.Invoke();
         });
     }
 
