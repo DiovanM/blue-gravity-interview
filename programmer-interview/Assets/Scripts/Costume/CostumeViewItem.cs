@@ -38,6 +38,9 @@ public class CostumeViewItem : MonoBehaviour
         icon.sprite = null;
         pointerHandler.onPointerUp = null;
         referencedItem = null;
+        onClick = null;
+
+        Deselect();
     }
 
     public void Deselect()

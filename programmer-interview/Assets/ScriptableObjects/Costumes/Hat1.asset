@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hat1
   m_EditorClassIdentifier: 
   name: Big Hat
-  icon: {fileID: 1771793573, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  icon: {fileID: 21300000, guid: 44d626cb9d94501439279d480333a669, type: 3}
   defaultPrice: 50
   defaultSellPrice: 25
   <Type>k__BackingField: 1

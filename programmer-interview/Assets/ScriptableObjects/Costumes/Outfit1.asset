@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Outfit1
   m_EditorClassIdentifier: 
   name: Suit 1
-  icon: {fileID: 1771793573, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  icon: {fileID: 21300000, guid: 7d6b0ad4582b3344aa655d5f0d6b87de, type: 3}
   defaultPrice: 70
   defaultSellPrice: 30
   <Type>k__BackingField: 0

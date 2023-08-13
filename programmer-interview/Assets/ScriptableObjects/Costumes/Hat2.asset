@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hat2
   m_EditorClassIdentifier: 
   name: Hood
-  icon: {fileID: 1771793573, guid: 12db48062db228547bd61d77aa67739c, type: 3}
+  icon: {fileID: 21300000, guid: 2c2c30779b319c947a11c7a8d757d439, type: 3}
   defaultPrice: 50
   defaultSellPrice: 25
   <Type>k__BackingField: 1
