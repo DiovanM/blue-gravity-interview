@@ -16,6 +16,7 @@ public class ShopView : Popup
     [SerializeField] private Button closeButton;
 
     private Action<List<Item>> onFinishPurchase;
+    private Action onClose;
     private List<Item> selectedItems;
     private int purchaseValue;
     private int playerBalance;
@@ -25,17 +26,19 @@ public class ShopView : Popup
         closeButton.onClick.AddListener(() =>
         {
             CanvasManager.instance.ClosePopup(this);
+            onClose?.Invoke();
         });
         purchaseButton.onClick.AddListener(FinishPurchase);
     }
 
-    public void Setup(List<Item> items, string title, Action<List<Item>> onFinishPurchase)
+    public void Setup(List<Item> items, string title, Action<List<Item>> onFinishPurchase, Action onClose)
     {
 
         selectedItems = new List<Item>();
         purchaseValue = 0;
 
         this.onFinishPurchase = onFinishPurchase;
+        this.onClose = onClose;
 
         playerBalance = CurrencyManager.Currency;
         titleText.text = title;
