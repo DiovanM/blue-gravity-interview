@@ -6,9 +6,15 @@ using Input;
 public class CharacterController : MonoBehaviour
 {
 
-    [SerializeField] private float walkingSpeed;
     [SerializeField] private Animator animator;
     [SerializeField] private new Rigidbody2D rigidbody;
+
+    private float speed;
+
+    private void Start()
+    {
+        speed = GameSettings.instance.GameData.characterSpeed;
+    }
 
     private void Update()
     {
@@ -16,17 +22,7 @@ public class CharacterController : MonoBehaviour
 
         var isMoving = movementInput.magnitude > 0;
 
-        //If is walking diagonally, we should adjust the input
-        //if(Mathf.Abs(movementInput.x) == 1 && Mathf.Abs(movementInput.y) == 1)
-        //{
-        //    //The diagonal velocity should be the hyponetuse of the input
-        //    //Since the input is always +-1, the value will always be the sqrt of 2
-        //    //In the end we just multiply the input by the sqrt of 2 to keep the signal
-
-        //    movementInput *= Mathf.Sqrt(2);
-        //}
-
-        rigidbody.velocity = movementInput.normalized * walkingSpeed;
+        rigidbody.velocity = movementInput.normalized * speed;
 
         if(isMoving)
         {
